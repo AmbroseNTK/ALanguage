@@ -2,9 +2,9 @@ language: nodejs
 
 install:
   - npm install
-  
+
 script:
-  - npm test
+  - sudo npm test
 
 before_install:
   - chmod +x build.sh 
