@@ -2,8 +2,12 @@ language: nodejs
 
 install:
   - npm install
+  
 script:
   - npm test
+
+before_install:
+  - chmod +x build.sh 
 
 after_success:
   - typedoc --out docs/
