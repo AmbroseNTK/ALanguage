@@ -1,5 +1,7 @@
 language: nodejs
 
+sudo: required
+
 install:
   - npm install
 
