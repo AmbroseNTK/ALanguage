@@ -4,6 +4,8 @@ sudo: required
 
 install:
   - npm install
+  - npm i -g mocha
+  - npm i -g typedoc
 
 script:
   - npm test
