@@ -4,7 +4,7 @@ install:
   - npm install
 
 script:
-  - sudo npm test
+  - npm test
 
 before_install:
   - chmod +x build.sh 

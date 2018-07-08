@@ -4,7 +4,7 @@
   "description": "Ambrose Programming Language",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "sudo ./node_modules/.bin/mocha"
   },
   "author": "",
   "license": "ISC",
