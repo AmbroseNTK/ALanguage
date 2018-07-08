@@ -1,0 +1,9 @@
+language: nodejs
+
+install:
+  - npm install
+script:
+  - npm test
+
+after_success:
+  - typedoc --out docs/
