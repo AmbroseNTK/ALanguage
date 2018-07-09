@@ -14,4 +14,4 @@ before_install:
   - chmod +x build.sh 
 
 after_success:
-  - typedoc --out docs\ --mode file
+  - typedoc --out docs/ --mode file
