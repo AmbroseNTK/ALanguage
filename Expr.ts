@@ -1,4 +1,4 @@
-import ExprCom from './ExprCom';
+import ExprComponent from './ExprComponent';
 
 export default class Expr{
 
@@ -12,10 +12,10 @@ export default class Expr{
         this.listComponent = this.parse(this.rawExpr);
     }
 
-    protected listComponent:Array<ExprCom> = new Array<ExprCom>();
+    protected listComponent:Array<ExprComponent> = new Array<ExprComponent>();
 
-    private parse(rawExpr:string): Array<ExprCom>{
-        let component = new Array<ExprCom>();
+    private parse(rawExpr:string): Array<ExprComponent>{
+        let component = new Array<ExprComponent>();
 
         return component;
     }
