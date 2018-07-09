@@ -2,6 +2,14 @@ language: nodejs
 
 sudo: required
 
+env:
+  global:
+  - USER="AmbroseNTK"
+  - EMAIL="nguyentuankiet23031998@gmail.com"
+  - REPO="ALanguage"
+  - FILES="docs\"
+  - GH_REPO="github.com/${USER}/${REPO}.git"
+
 install:
   - npm install
   - npm i -g mocha
@@ -15,3 +23,9 @@ before_install:
 
 after_success:
   - typedoc --out docs/ --mode file
+  - git remote
+  - git config user.email ${EMAIL}
+  - git config user.name ${USER}
+  - git add ${FILES}
+  - git commit -m "Update docs"
+  - git push "https://hycEgohjld1iGEBQGAPHNg@${GH_REPO}" master > /dev/null 2>&1

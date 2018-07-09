@@ -27,6 +27,6 @@ describe("Indexed List", () => {
         let result = false;
         indexedList.delete(1);
         result = indexedList.getList().length==1 && indexedList.getList()[0] == "World";
-    })
+    });
 
 });
